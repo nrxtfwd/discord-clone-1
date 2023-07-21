@@ -1,0 +1,263 @@
+.search-in-friends-div {
+    width: 91%;
+    position: relative;
+}
+
+.search-in-friends {
+    width: 97%;
+    padding: 6px 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: rgb(30,31,34);
+    border-radius: 4px;
+    color: white;
+    margin-top: 15px;
+    outline: none;
+}
+
+.search-in-friends::placeholder {
+    color: rgb(121,127,134);
+}
+
+.search-icon {
+    position: absolute;
+    width: 21px;
+    top: 20px;
+    right: 5px;
+    filter: invert(61%) sepia(5%) saturate(336%) hue-rotate(177deg) brightness(94%) contrast(87%);
+}
+
+.main-window .online-friends-tab,
+.main-window .all-friends-tab {
+    --display-mode: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends-online {
+    position: relative;
+    width: 91%;
+    margin-top: 12px;
+    height: 44px;
+}
+
+.friends-online p {
+    left: 0;
+    position: absolute;
+    font-size: 11px;
+    color: rgb(174,179,185);
+    font-weight: 700;
+}
+
+.online-friends-list {
+    width: 94%;
+}
+
+.online-friend-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.online-friend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 63px;
+    border-top: 1px solid rgb(63,65,71);
+    position: relative;
+}
+
+.online-friend .user-pfp-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-right: 12px;
+    position: relative;
+}
+
+.user-pfp-div .of-status {
+    bottom: -5px;
+    right: -5px;
+    position: absolute;
+    background-color: rgb(49,51,56);
+    height: 17px;
+    width: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+}
+
+.user-pfp-div .of-status-icon {
+    height: 15px;
+    margin-bottom: 5px;
+    margin-right: 0;
+}
+
+.online-friend .user-pfp-div .user-pfp {
+    width: 32px;
+    border-radius: 30px;
+}
+
+.online-friend .user-info .username {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 2px;
+    display: inline;
+}
+
+.online-friend .user-info p {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #B5BAC1;
+    margin: 0;
+}
+
+.online-friend .user-info .nickname {
+    display: none;
+}
+
+.online-friend .interact-user {
+    right: 0;
+    position: absolute;
+}
+
+.online-friend .interact-user button {
+    height: 35px;
+    border-radius: 20px;
+    width: 35px;
+    border: none;
+    background-color: rgb(43,45,49);
+}
+
+.online-friend .interact-user img {
+    height: 20px;
+    margin-top: 3px;
+}
+
+.online-friend-div:hover {
+    background-color: rgba(78, 80, 88, 0.298);
+}
+
+.online-friend-div:hover .interact-user button {
+    background-color: rgb(38, 39, 43);
+}
+
+.online-friend-div:hover .user-info .nickname {
+    display: inline;
+}
+
+.friends-activity h3 {
+    font-size: 19px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+.friends-activity {
+    height: 100%;
+}
+
+.friend-activity-list {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.friend-activity {
+    cursor: pointer;
+    background-color: #2b2d31;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(63,65,71);
+    height: 36px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.fa-pfp-div img {
+    border-radius: 30px;
+}
+
+.fa-user-info {
+    margin-left: 14px;
+    margin-bottom: 4px;
+}
+
+.fa-user-info p {
+    margin: 0;
+    color: rgb(219, 222, 225);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fa-user-info .activity-status {
+    margin: 0;
+    color: rgb(181, 186, 193);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.friend-activity .game-icon-div {
+    position: absolute;
+    right: 12px;
+}
+
+.game-icon-div img {
+    height: 40px;
+}
+
+.friend-activity:hover {
+    background-color: rgb(31, 32, 34);
+}
+
+.main-window .closed-tab {
+    display: none;
+    --display-mode: block;
+}
+
+.active-tab {
+    display: var(--display-mode);
+}
+
+.of-status .fl-offline-icon {
+    margin-top: 5.75px;
+    height: 11px;
+    margin-left: 1px;
+}
+
+.pending-friends-tab,
+.blocked-friends-tab {
+    --display-mode: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pending-friends-tab img,
+.blocked-friends-tab img {
+    display: block;
+    margin-top: 130px;
+}
+
+.pending-friends-tab p,
+.blocked-friends-tab p {
+    color: #949BA4;
+    font-size: 14px;
+    margin-top: 50px;
+    font-weight: 400;
+}

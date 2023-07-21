@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    cursor: pointer;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif !important;
+}
+
+html {
+    height: 100%;
+}
+
+.black-to-grey {
+    filter: invert(69%) sepia(2%) saturate(2264%) hue-rotate(174deg) brightness(95%) contrast(66%);
+}
+
+main {
+    flex: 1;
+    background-color: rgb(49,51,56);
+}

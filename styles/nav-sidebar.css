@@ -1,0 +1,164 @@
+.nav-sidebar {
+    background-color: rgb(43,45,49);
+    width: 240px;
+}
+
+.dms-channels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.dc-search-bar {
+    margin-top: 12px;
+    width: 200px;
+    height: 15px;
+    padding: 7px 6px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(30,31,34);
+    color: white;
+    outline: none;
+}
+
+.dc-button {
+    height: 42px;
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 2px;
+}
+
+.dc-button:hover {
+    background: #4E50584C
+}
+
+.dc-button:hover .main-text {
+    color: #DBDEE1;
+}
+
+.dc-button img {
+    height: 60%;
+    margin-left: 6px;
+}
+
+.dc-button .main-text {
+    margin-left: 18px;
+    color: rgb(148,155,164);
+    font-size: 15px;
+}
+
+.dc-image-div {
+    position: relative;
+}
+
+.active-dc-button .main-text {
+    color: white;
+}
+
+.active-dc-button .black-to-grey {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(149deg) brightness(102%) contrast(104%);
+}
+
+.active-dc-button {
+    background: rgb(64,66,73);
+}
+
+.friends-button {
+    margin-top: 10px;
+}
+
+.dc-fs-separator {
+    height: 1px;
+    margin-top: 10px;
+    background-color: rgb(31,32,35);
+    width: 100%;
+    color: rgba(0,0,0,0);
+}
+
+.nitro-1m-free {
+    background-image: linear-gradient(90deg, rgb(132, 71, 198), rgb(171, 93, 139));
+    font-size: 11px;
+    padding: 2px 6px;
+    color: white;
+    border-radius: 20px;
+    margin-left: 22px;
+}
+
+.dm-separator {
+    margin-top: 20px;
+    width: 210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 12px;
+    margin-bottom: 8px;
+}
+
+.dm-separator p {
+    display: inline;
+    font-size: 11px;
+    color: #949BA4;
+    font-weight: 700;
+    margin-left: 9px;
+}
+
+.dm-separator button {
+    margin-left: 76px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: #949BA4;
+}
+
+.direct-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 212px;
+    margin-bottom: 1px;
+}
+
+.direct-message .main-text {
+    font-size: 15px;
+    margin-left: 18px;
+    margin-top: 12px;
+}
+
+.direct-message img {
+    height: 80%;
+    border-radius: 30px;
+    margin-top: 3px;
+    margin-left: 0;
+}
+
+.status-icon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 21px;
+    left: 24px;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(43,45,49);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-icon img {
+    margin: 0;
+    height: 60%;
+}
+
+.offline-status {
+    filter: invert(50%);
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord</title>
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/server-list.css">
+        <link rel="stylesheet" href="styles/nav-sidebar.css">
+        <link rel="stylesheet" href="styles/profile-header.css">
+        <link rel="stylesheet" href="styles/main-header.css">
+        <link rel="stylesheet" href="styles/friends.css">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="server-list">
+            <button class="contacts-button">
+                <img src="images/discord-icon.png">
+            </button>
+            <div class="server-list-separator">.</div>
+            <button class="server-button">
+                <img src="images/server-1.webp">
+            </button>
+            <button class="server-button">
+                <img src="images/server-2.webp">
+            </button>
+            <button class="server-list-feature-button">
+                <p>+</p>
+            </button>
+            <button class="server-list-feature-button">
+                <img src="images/compass.svg" class="black-to-green">
+            </button>
+            <div class="server-list-separator">.</div>
+            <button class="server-list-feature-button">
+                <img src="images/download-apps.svg" class="black-to-green">
+            </button>
+        </div>
+
+        <div class="nav-sidebar">
+            <div class="dms-channels">
+                <div class="dc-first-slot">
+                    <input placeholder="Find or start a conversation" class="dc-search-bar">
+                </div>
+                <div class="dc-fs-separator">.</div>
+                <button class="dc-button friends-button">
+                    <img src="images/friends.svg" class="black-to-grey">
+                    <p class="main-text">Friends</p>
+                </button>
+                <button class="dc-button">
+                    <img src="images/nitro.svg" class="black-to-grey">
+                    <p class="main-text">Nitro</p>
+                    <p class="nitro-1m-free">1 MONTH FREE</p>
+                </button>
+                <div class="dm-separator">
+                    <p>DIRECT MESSAGES</p>
+                    <button>+</button>
+                </div>
+                <button class="dc-button direct-message">
+                    <div class="dc-image-div">
+                        <img src="avatars/asianCookies.webp" class="icon">
+                        <div class="status-icon">
+                            <img class="offline-status" src="images/offline-icon.png">
+                        </div>
+                    </div>
+                    <p class="main-text">AsianCookies</p>
+                </button>
+                <button class="dc-button direct-message">
+                    <div class="dc-image-div">
+                        <img src="avatars/some-guy.webp" class="icon">
+                        <div class="status-icon">
+                            <img class="offline-status" src="images/offline-icon.png">
+                        </div>
+                    </div>
+                    <p class="main-text">some guy</p>
+                </button>
+                <button class="dc-button direct-message">
+                    <div class="dc-image-div">
+                        <img src="avatars/kadz.webp" class="icon">
+                        <div class="status-icon">
+                            <img class="offline-status" src="images/offline-icon.png">
+                        </div>
+                    </div>
+                    <p class="main-text">kadz</p>
+                </button>
+            </div>
+            <div class="profile-header">
+                <button class="profile-info">
+                    <div class="pfp-div">
+                        <img class="pfp" src="avatars/nrxtfwd.webp">
+                        <div class="user-status-div">
+                            <img class="user-status-icon" src="images/idle-status-icon.svg">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="username">nrxtfwd</p>
+                        <p class="status-name">Idle</p>
+                    </div>
+                </button>
+                <div class="user-buttons">
+                    <button class="mute">
+                        <img src="images/muted.svg" class="black-to-grey" onclick="switchImg('mute')">
+                    </button>
+                    <button class="deafen" onclick="switchImg('deafen')">
+                        <img src="images/deafened.svg" class="black-to-grey">
+                    </button>
+                    <button class="settings">
+                        <img src="images/settings.svg" class="black-to-grey">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="main-header">
+                <div class="window-title">
+                    <img src="images/friends.svg" class="black-to-grey">
+                    <p>Friends</p>
+                </div>
+                <div class="mh-title-divider">.</div>
+                <div class="friend-tabs js-friend-tabs">
+                    <button class="online-friends-tab-button">Online</button>
+                    <button>All</button>
+                    <button>Pending</button>
+                    <button>Blocked</button>
+                    <button class="add-friend">Add Friend</button>
+                </div>
+                <div class="extra-ft-buttons">
+                    <div>
+                        <button>
+                            <img class="black-to-grey" src="images/new-group-dm.svg">
+                        </button>
+                    </div>
+                    <div class="mh-title-divider">.</div>
+                    <div class="extra2">
+                        <button>
+                            <img class="inbox-button black-to-grey" src="images/inbox.svg">
+                        </button>
+                        <button>
+                            <img class="black-to-grey" src="images/help.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-body">
+                <div class="main-window">
+                    <div class="online-friends-tab closed-tab tab">
+                        <div class="search-in-friends-div">
+                            <input class="search-in-friends" placeholder="Search">
+                            <img class="search-icon" src="images/search-icon.svg">
+                        </div>
+
+                        <div class="friends-online">
+                            <p>ONLINE — 2</p>
+                        </div>
+
+                        <div class="online-friends-list">
+                            <div class="online-friend-div">
+                                <div class="online-friend">
+                                    <div class="user-pfp-div">
+                                        <img class="user-pfp" src="avatars/kadz.webp">
+                                        <div class="of-status">
+                                            <img class="of-status-icon" src="images/online-icon.png">
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <p class="username">kadz</p>
+                                        <p class="nickname">#4299</p>
+                                        <p class="status">Online</p>
+                                    </div>
+                                    <div class="interact-user">
+                                        <button>
+                                            <img class="black-to-grey" src="images/message-icon.svg">
+                                        </button>
+                                        <button>
+                                            <img class="black-to-grey" src="images/three-dots.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="online-friends-list">
+                            <div class="online-friend-div">
+                                <div class="online-friend">
+                                    <div class="user-pfp-div">
+                                        <img class="user-pfp" src="avatars/some-guy.webp">
+                                        <div class="of-status">
+                                            <img class="of-status-icon" src="images/dnd-icon.png">
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <p class="username">some guy</p>
+                                        <p class="nickname">spiderman</p>
+                                        <p class="status">Do Not Disturb</p>
+                                    </div>
+                                    <div class="interact-user">
+                                        <button>
+                                            <img class="black-to-grey" src="images/message-icon.svg">
+                                        </button>
+                                        <button>
+                                            <img class="black-to-grey" src="images/three-dots.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="all-friends-tab closed-tab tab">
+                        <div class="search-in-friends-div">
+                            <input class="search-in-friends" placeholder="Search">
+                            <img class="search-icon" src="images/search-icon.svg">
+                        </div>
+
+                        <div class="friends-online">
+                            <p>ALL FRIENDS — 3</p>
+                        </div>
+
+                        <div class="online-friends-list">
+                            <div class="online-friend-div">
+                                <div class="online-friend">
+                                    <div class="user-pfp-div">
+                                        <img class="user-pfp" src="avatars/kadz.webp">
+                                        <div class="of-status">
+                                            <img class="of-status-icon" src="images/online-icon.png">
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <p class="username">kadz</p>
+                                        <p class="nickname">#4299</p>
+                                        <p class="status">Online</p>
+                                    </div>
+                                    <div class="interact-user">
+                                        <button>
+                                            <img class="black-to-grey" src="images/message-icon.svg">
+                                        </button>
+                                        <button>
+                                            <img class="black-to-grey" src="images/three-dots.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="online-friends-list">
+                            <div class="online-friend-div">
+                                <div class="online-friend">
+                                    <div class="user-pfp-div">
+                                        <img class="user-pfp" src="avatars/some-guy.webp">
+                                        <div class="of-status">
+                                            <img class="of-status-icon" src="images/dnd-icon.png">
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <p class="username">some guy</p>
+                                        <p class="nickname">spiderman</p>
+                                        <p class="status">Do Not Disturb</p>
+                                    </div>
+                                    <div class="interact-user">
+                                        <button>
+                                            <img class="black-to-grey" src="images/message-icon.svg">
+                                        </button>
+                                        <button>
+                                            <img class="black-to-grey" src="images/three-dots.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="online-friends-list">
+                            <div class="online-friend-div">
+                                <div class="online-friend">
+                                    <div class="user-pfp-div">
+                                        <img class="user-pfp" src="avatars/asianCookies.webp">
+                                        <div class="of-status">
+                                            <img class="fl-offline-icon of-status-icon black-to-grey" src="images/offline-icon.png">
+                                        </div>
+                                    </div>
+                                    <div class="user-info">
+                                        <p class="username">AsianCookies</p>
+                                        <p class="nickname">asiancookies</p>
+                                        <p class="status">Offline</p>
+                                    </div>
+                                    <div class="interact-user">
+                                        <button>
+                                            <img class="black-to-grey" src="images/message-icon.svg">
+                                        </button>
+                                        <button>
+                                            <img class="black-to-grey" src="images/three-dots.svg">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pending-friends-tab closed-tab tab">
+                        <img src="images/pending.svg">
+                        <p>There are no pending friend requests. Here's Wumpus for now.</p>
+                    </div>
+
+                    <div class="blocked-friends-tab closed-tab tab">
+                        <img src="images/blocked.svg">
+                        <p>You can't unblock the Wumpus.</p>
+                    </div>
+                </div>
+    
+                <div class="user-list">
+                    <div class="friends-activity">
+                        <h3>Active Now</h3>
+                        <div class="friend-activity-list">
+                            <div class="friend-activity">
+                                <div class="fa-pfp-div">
+                                    <div class="fa-pfp">
+                                        <img src="avatars/asianCookies.webp">
+                                    </div>
+                                </div>
+                                <div class="fa-user-info">
+                                    <p class="username">AsianCookies</p>
+                                    <p class="activity-status">Brawlhalla — 10 Min</p>
+                                </div>
+                                <div class="game-icon-div">
+                                    <img class="game-icon" src="images/brawl-icon.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html

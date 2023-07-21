@@ -1,0 +1,23 @@
+.main-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-window,
+.user-list {
+    height: 100%;
+}
+
+.main-window {
+    background-color: rgb(49,51,56);
+    flex: 2.1;
+}
+
+.user-list {
+    background-color: rgb(49,51,56);
+    border-left: 1px solid rgb(63,65,71);
+    flex: 1;
+}

@@ -1,0 +1,100 @@
+.main-header {
+    background-color: rgb(49,51,56);
+    height: 51px;
+    border-bottom: 1px solid rgb(38,40,44);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.window-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.window-title p {
+    margin: 0;
+    margin-left: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.window-title img {
+    height: 23px;
+}
+
+.mh-title-divider {
+    background-color: #4E50587A;
+    color: rgba(0,0,0,0);
+    width: 1px;
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.friend-tabs {
+    margin-left: 16px;
+    flex: 1;
+}
+
+.friend-tabs button {
+    font-size: 15px;
+    color: #B5BAC1;
+    background: none;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-weight: 500;
+}
+
+.friend-tabs button:hover:not(.add-friend) {
+    background-color: #4E50584C;
+}
+
+.friend-tabs button:hover:not(.add-friend):not(.active-ft) {
+    color: #DBDEE1;
+}
+
+.friend-tabs .add-friend {
+    background-color: rgb(36,128,70);
+    color: white;
+}
+
+.friend-tabs .active-ft {
+    background-color: #4E505899;
+    color: white;
+}
+
+.extra-ft-buttons {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.extra-ft-buttons .extra2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.extra-ft-buttons button {
+    border: none;
+    background: none;
+}
+
+.extra-ft-buttons img {
+    width: 23px;
+}
+
+.extra-ft-buttons .inbox-button {
+    margin-right: 3px;
+}
+
+.extra-ft-buttons button:hover img {
+    filter: invert(93%) sepia(7%) saturate(211%) hue-rotate(181deg) brightness(89%) contrast(98%);
+}
